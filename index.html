@@ -3,49 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Merch Store</title>
+    <title>Anime Merch Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="navbar">
-            <h1>Anime Merch</h1>
+            <h1>Anime Merch Store</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
     <section class="hero">
         <h2>Welcome to the Anime Merch Store!</h2>
-        <p>Your one-stop destination for all your favorite anime merchandise.</p>
+        <p>Your ultimate destination for anime merchandise!</p>
     </section>
-    
+
     <section class="featured-products">
         <h2>Featured Products</h2>
         <div class="products">
-            <div class="product">
+            <div class="product" data-id="1">
                 <img src="https://via.placeholder.com/150" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>Great anime merch</p>
-                <a href="shop.html" class="btn">Shop Now</a>
+                <h3>Anime Figure</h3>
+                <p>$30.00</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <div class="product">
+            <div class="product" data-id="2">
                 <img src="https://via.placeholder.com/150" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>Exclusive anime action figure</p>
-                <a href="shop.html" class="btn">Shop Now</a>
+                <h3>Anime Poster</h3>
+                <p>$15.00</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <div class="product">
+            <div class="product" data-id="3">
                 <img src="https://via.placeholder.com/150" alt="Product 3">
-                <h3>Product 3</h3>
-                <p>Anime clothing collection</p>
-                <a href="shop.html" class="btn">Shop Now</a>
+                <h3>Anime T-shirt</h3>
+                <p>$20.00</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
         </div>
     </section>
@@ -53,5 +54,7 @@
     <footer>
         <p>&copy; 2025 Anime Merch Store. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
